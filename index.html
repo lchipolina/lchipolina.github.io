@@ -11,6 +11,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/31e354629b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_HTVj9VNLpCqwZ3SxAZFji");
+        })();
+    </script>
     <title>Luciano Chipolina</title>
 </head>
 
@@ -69,7 +75,14 @@
             <p><b>Dirección:</b> Junín 1050, San Miguel de Tucumán, Tucumán, Argentina</p>
             <hr>
             <h3 class="titulo3">Mi historia</h3>
-            <p>Nací en San Miguel de Tucumán el 11 de enero de 1999. Viví en Yerba Buena y San Miguel de Tucumán, donde actualmente resido. Tuve una infancia complicada debido a diferentes enfermedades que pude superar. Mi interés por la tecnología empezó desde muy chico gracias a mi hermano, quien hoy es Ingeniero en Telecomunicaciones, y yo me orienté hacia la programación. Estudié en el Colegio Tulio García Fernández, donde me egresé en la orientación de Economía. Luego estudié Abogacía, pero me di cuenta que no era lo mío, entonces abandoné esa carrera para empezar a estudiar la carrera de Programador Universitario. Hoy en día estoy realizando un curso de FullStack y Software Development, para poder ampliar mi abanico de habilidades.</p>
+            <p>Nací en San Miguel de Tucumán el 11 de enero de 1999. Viví en Yerba Buena y San Miguel de Tucumán, donde
+                actualmente resido. Tuve una infancia complicada debido a diferentes enfermedades que pude superar. Mi
+                interés por la tecnología empezó desde muy chico gracias a mi hermano, quien hoy es Ingeniero en
+                Telecomunicaciones, y yo me orienté hacia la programación. Estudié en el Colegio Tulio García Fernández,
+                donde me egresé en la orientación de Economía. Luego estudié Abogacía, pero me di cuenta que no era lo
+                mío, entonces abandoné esa carrera para empezar a estudiar la carrera de Programador Universitario. Hoy
+                en día estoy realizando un curso de FullStack y Software Development, para poder ampliar mi abanico de
+                habilidades.</p>
         </article>
         <h2 class="display-4 text-center my-4" id="experiencia">Experiencia Laboral</h2>
         <hr>
@@ -106,7 +119,8 @@
                         <p class="lead">Colegio Tulio García Fernández</p>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title text-center">EGB3 Y POLIMODAL MODALIDAD ECONOMÍA Y GESTIÓN DE LAS ORGANIZACIONES</h5>
+                        <h5 class="card-title text-center">EGB3 Y POLIMODAL MODALIDAD ECONOMÍA Y GESTIÓN DE LAS
+                            ORGANIZACIONES</h5>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 card h-100 shadow mb-5 bg-white rounded">
@@ -196,78 +210,76 @@
         <h2 class="display-4 text-center my-4" id="portfolio">Portfolio</h2>
         <hr>
         <article class="shadow p-3 mb-5 bg-white rounded">
-            <h3 class="mb-4"><a href="https://odin-criticos-cervezas.netlify.app/index.html" target="_blank">Odín - Críticos de Cerveza</a></h3>
+            <h3 class="mb-4"><a href="https://odin-criticos-cervezas.netlify.app/index.html" target="_blank">Odín -
+                    Críticos de Cerveza</a></h3>
             <div class="row">
                 <div class="col-sm-12 col-md-4">
-                    <a href="https://odin-criticos-cervezas.netlify.app/index.html" target="_blank"><img src="img/odin.png" alt="Web Odín - Críticos de Cerveza"
-                        class="w-100 mb-3"></a>
+                    <a href="https://odin-criticos-cervezas.netlify.app/index.html" target="_blank"><img
+                            src="img/odin.png" alt="Web Odín - Críticos de Cerveza" class="w-100 mb-3"></a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a href="https://odin-criticos-cervezas.netlify.app/antares.html" target="_blank"><img src="img/odin2.png" alt="Web Odín - Críticos de Cerveza" class="w-100 mb-3"></a>
+                    <a href="https://odin-criticos-cervezas.netlify.app/antares.html" target="_blank"><img
+                            src="img/odin2.png" alt="Web Odín - Críticos de Cerveza" class="w-100 mb-3"></a>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <a href="https://odin-criticos-cervezas.netlify.app/login.html" target="_blank"><img src="img/odin3.png" alt="Web Odín - Críticos de Cerveza" class="w-100 mb-3"></a>
+                    <a href="https://odin-criticos-cervezas.netlify.app/login.html" target="_blank"><img
+                            src="img/odin3.png" alt="Web Odín - Críticos de Cerveza" class="w-100 mb-3"></a>
                 </div>
             </div>
         </article>
     </section>
-    <section class="card" id="contacto">
-        <div class="card-header">
-            <h5 class="card-title">Formulario de contacto</h5>
-        </div>
-        <div class="card-body">
-            <form onsubmit="validarForm(event)">
-                <div class="form-group">
-                    <label>Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Juan Perez"
-                        onblur="validarNombre(this)" required>
-                    <div class="invalid-feedback">
-                        Debe ingresar un nombre.
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" placeholder="juanperez@email.com"
-                        onblur="validarEmail(this)" required>
-                    <div class="invalid-feedback">
-                        Debe ingresar un correo electrónico válido.
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Teléfono:</label>
-                    <input type="number" class="form-control" id="telefono" placeholder="03814123456"
-                        onblur="validarNumeros(this)" required>
-                    <div class="invalid-feedback">
-                        Debe ingresar un número de teléfono válido.
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Consulta:</label>
-                    <textarea class="form-control" id="consulta"
-                        placeholder="Debe contener por lo menos 10 caracteres." onblur="validarConsulta(this)"
-                        required></textarea>
-                    <div class="invalid-feedback">
-                        Debe ingresar una consulta válida de al menos 10 caracteres.
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="terminos">
-                        <label class="form-check-label">Estoy de acuerdo con los términos y condiciones.</label>
+    <h2 class="display-4 text-center my-4" id="contacto">Contacto</h2>
+    <hr>
+    <div class="container shadow p-0 mb-5 bg-white rounded">
+        <section class="card">
+            <div class="card-header">
+                <h5 class="card-title">Formulario de contacto</h5>
+            </div>
+            <div class="card-body">
+                <form onsubmit="validarForm(event)">
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Juan Perez"
+                            onblur="validarNombre(this)" required>
                         <div class="invalid-feedback">
-                            Debe estar de acuerdo con los términos y condiciones.
+                            Debe ingresar un nombre.
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label>Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="juanperez@email.com"
+                            onblur="validarEmail(this)" required>
+                        <div class="invalid-feedback">
+                            Debe ingresar un correo electrónico válido.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono:</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="03814123456"
+                            onblur="validarNumeros(this)" required>
+                        <div class="invalid-feedback">
+                            Debe ingresar un número de teléfono válido.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Consulta:</label>
+                        <textarea class="form-control" id="consulta"
+                            placeholder="Debe contener por lo menos 10 caracteres." onblur="validarConsulta(this)"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            Debe ingresar una consulta válida de al menos 10 caracteres.
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">
+                        Enviar
+                    </button>
+                </form>
+                <div class="alert alert-success my-4 d-none" role="alert" id="msjEnvio">
+
                 </div>
-                <button class="btn btn-success" type="submit">
-                    Enviar
-                </button>
-            </form>
-            <div class="alert alert-success my-4 d-none" role="alert" id="msjEnvio">
-                
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer class="bg-dark text-light py-2">
         <div class="container text-center">
             <i class="fab fa-linkedin fa-2x mt-3"></i>
